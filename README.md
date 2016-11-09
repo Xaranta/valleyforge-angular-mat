@@ -1,3 +1,7 @@
+I based this app off the material-start tutorial. but I think I need to restart, since this hasn't been working well. 
+
+
+
 # Angular Material-Start (ES6 Tutorials)
 
 This branch contains the tutorial steps and processes used to implement the start-app shown below:
