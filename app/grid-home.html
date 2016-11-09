@@ -1,0 +1,146 @@
+<div >
+  <!-- Container #1 (see wireframe) hide-sm-->
+  <md-toolbar layout="row" layout-align="center center">
+    <md-button class="menu md-icon-button" ng-click="app.toggleList()"
+               aria-label="Show Menu">
+      <md-icon md-svg-icon="menu"></md-icon>
+    </md-button>
+    <!--h1>Angular Material - Starter App</h1-->
+   <md-icon md-svg-src="./assets/svg/valleyForgeLogo.svg" class = "logo"></md-icon>
+      
+        <md-button class="md-icon-button" aria-label="Search">
+          <md-icon class = "search" md-svg-icon="search"></md-icon>
+        </md-button>
+      <h1 class = "toolbar-text">|</h1>
+      <div ng-controller="BasicDemoCtrl as ctrl">
+          <md-button class=" toolbar-text"
+                       ng-click="ctrl.showDialog($event)" aria-label="Login">
+              <p class = "toolbar-text"><span>Login</span></p>
+            </md-button>
+      </div>
+  </md-toolbar>
+
+  <!-- Container #2 -->
+  <div flex hide-gt-xs  layout="row">
+      <md-content flex id="content">
+        <h1>Mobile Page</h1>
+      <!-- Custom UserDetails component -->
+      <!--user-details
+          selected="app.selected" >
+      </user-details-->
+    </md-content>
+  </div>
+
+    <!-- Container #3 --> <!-- md-is-locked-open="$mdMedia('sm')" -->
+    
+    <md-sidenav class="md-whiteframe-4dp" md-component-id="left" ng-click="app.toggleList()">
+      <!-- Custom UsersList component -->
+      <h4>MENU</h4>
+      <md-divider>
+        </md-divider>
+        <md-list>
+            <h4>VALLEY FORGE</h4>
+            <md-list-item class="underline-on-hover md-3-line" ng-click="null">
+                <div class="md-list-item-text" layout="column">
+                    <h4>LIBRARY</h4>
+                </div>
+            </md-list-item>
+            <md-list-item class="underline-on-hover md-3-line" ng-click="null">
+                <div class="md-list-item-text" layout="column">
+                    <h4>PRODUCTS</h4>
+                </div>
+            </md-list-item>
+            <md-list-item class="underline-on-hover md-3-line" ng-click="null">
+                <div class="md-list-item-text" layout="column">
+                    <h4>MEDIA</h4>
+                </div>
+            </md-list-item>
+            <md-list-item class="underline-on-hover md-3-line" ng-click="null">
+                <div class="md-list-item-text" layout="column">
+                    <h4>CAREERS</h4>
+                </div>
+            </md-list-item>
+            <md-list-item class="underline-on-hover md-3-line" ng-click="null">
+                <div class="md-list-item-text" layout="column">
+                    <h4>CONTACT</h4>
+                </div>
+            </md-list-item>
+            
+        </md-list>
+      <!--users-list
+          users="app.users"
+          selected="app.selected"
+          on-selected="app.selectUser(user)">
+      </users-list-->
+    </md-sidenav>
+
+    <!-- Container #4 -->
+    <!--md-content flex id="content">
+      <!-- Custom UserDetails component -->
+      <!--user-details
+          selected="app.selected" >
+      </user-details>
+    </md-content>
+  </div-->
+      
+    <div flex hide-xs class="gridListdemoBasicUsage dialog-demo-content md-padding dialogdemoBasicUsage" >
+  <md-grid-list md-cols-xs="2" md-cols-sm="2" md-cols-gt-sm="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="2px">
+
+    <md-grid-tile class="darken" md-rowspan="1" md-colspan="1" md-colspan-sm="1" md-colspan-xs="1"ng-click="app.showAlert($event)">
+        <img src="./assets/TEST/Images/about.jpg">
+    </md-grid-tile>
+    
+    <md-grid-tile class="darken">
+        <img src="./assets/TEST/Images/Library.jpg">
+    </md-grid-tile>
+
+    <md-grid-tile class="darken">
+        <img src="./assets/TEST/Images/RollerShades.jpg">
+        <div class="caption">
+                        <hr>
+                        <h1>Roller Shades</h1>
+                    </div>
+    </md-grid-tile>
+
+    <md-grid-tile class="darken" md-rowspan="1">
+        <img alt="" class="img-responsive" src= "./assets/TEST/Images/Bedding.jpg">
+        <div class="caption">
+            <hr>
+            <h1>Bedding</h1>
+        </div>
+        <!--img src="./assets/TEST/Images/Bedding.jpg"-->
+    </md-grid-tile>
+
+    <md-grid-tile class="darken" md-rowspan="1" md-colspan="1" md-colspan-sm="1" md-colspan-xs="1">
+      <img src="./assets/TEST/Images/FabricCollections.jpg">
+        <div class="caption">
+            <hr>
+            <h1>Fabric Collections</h1>
+        </div>
+    </md-grid-tile>
+
+    <md-grid-tile class="darken" md-rowspan="1">
+        <img src="./assets/TEST/Images/WeaveUp.jpg">
+        <div class="caption">
+            <hr>
+            <h1>WeaveUp</h1>
+        </div>
+    </md-grid-tile>
+    <md-grid-tile class="darken" md-rowspan="1" md-colspan="1" md-colspan-sm="1" md-colspan-xs="1">
+        <img src="./assets/TEST/Images/Media.jpg">
+        <div class="caption">
+            <hr>
+            <h1>Media</h1>
+        </div>
+    </md-grid-tile>
+    <md-grid-tile class="darken" md-rowspan="1" md-colspan="1" md-colspan-sm="1" md-colspan-xs="1">
+        <img src="./assets/TEST/Images/Contact.jpg">
+        <div class="caption">
+            <hr>
+            <h1>Contact</h1>
+        </div>
+    </md-grid-tile>
+
+  </md-grid-list>
+</div>
+</div>

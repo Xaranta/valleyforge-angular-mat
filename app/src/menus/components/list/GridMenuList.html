@@ -1,0 +1,27 @@
+<!-- NOTE: @see ngClick for how to pass data selection to outside expression -->
+<!--md-list>
+  <md-list-item ng-repeat="user in $ctrl.users">
+    <md-button ng-click="$ctrl.showDetails({user:user})" ng-class="{'selected' : user === $ctrl.selected }">
+      <md-icon md-svg-icon="{{user.avatar}}" class="avatar"></md-icon>
+      {{user.name}}
+    </md-button>
+  </md-list-item>
+</md-list-->
+
+<!--Going to make the selected function make an alert with the tile's link -->
+
+ <div flex hide-xs class="gridListdemoBasicUsage" >
+  <md-grid-list md-cols-xs="2" md-cols-sm="2" md-cols-gt-sm="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="2px">
+
+    <md-grid-tile class="darken" ng-repeat="tile in $ctrl.gridMenu">
+        <md-button ng-click="$ctrl.showDetails({tile:tile})" ng-class="{'selected' : tile === $ctrl.selected }">
+            <img ng-src = "{{tile.image}}">
+            <div class="caption">
+                <hr>
+                <h1>{{tile.name}}</h1>
+            </div>
+        </md-button>
+    </md-grid-tile>
+
+  </md-grid-list>
+</div>
